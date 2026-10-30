@@ -200,6 +200,148 @@ const LESSONS = {
       { question: "Yozishni o'rganishda birinchi navbatda nimaga e'tibor berish kerak?", options: ["Faqat tezlikka", "Aniqlik va qulay texnikaga", "Klaviaturani qattiq bosishga"], correctIndex: 1, explanation: "Avval aniqlikni oshirish, keyin tezlikni bosqichma-bosqich oshirish foydali." }
     ],
     summary: ["Klaviatura ma'lumot kiritish uchun xizmat qiladi.", "Enter, Backspace, Shift va Space kabi tugmalarni bilish zarur.", "Monkeytype orqali mashq qiling va WPM bilan aniqlikni solishtirib boring."],
+    nextLessonId: "l5"
+  },
+
+  l5: {
+    id: "l5", number: 5, moduleId: "m2", title: "Sichqoncha bilan aniq va qulay ishlash", level: "Boshlang'ich", estimatedMinutes: 20,
+    prerequisites: ["l4"],
+    objectives: [
+      "Sichqonchaning asosiy tugmalari va g'ildiragi vazifasini bilasiz.",
+      "Bir marta bosish, ikki marta bosish va o'ng tugma farqini tushunasiz.",
+      "Drag-and-drop (sudrab tashlash) nima ekanini amalda sinaysiz."
+    ],
+    explanationBlocks: [
+      {
+        heading: "Sichqonchaning asosiy qismlari",
+        paragraphs: [
+          "Sichqoncha (mouse) ekrandagi kursorni boshqarish uchun ishlatiladi. Unda odatda chap tugma, o'ng tugma va o'rtada g'ildirak (scroll wheel) bo'ladi.",
+          "Chap tugma — eng ko'p ishlatiladigan tugma: tanlash, ochish va bosish uchun. O'ng tugma qo'shimcha menyuni (kontekst menyusi) ochadi. G'ildirak esa sahifani yuqori-pastga aylantirish uchun xizmat qiladi."
+        ],
+        image: { src: "assets/images/lesson-05/mouse-qismlari.png", alt: "Sichqonchaning asosiy qismlari sxemasi", caption: "Chap tugma, o'ng tugma va g'ildirak — sichqonchaning asosiy qismlari." }
+      },
+      {
+        heading: "Bosish turlari: bitta, ikkita va sudrab tashlash",
+        paragraphs: [
+          "Bir marta bosish (single click) — biror narsani tanlash yoki tugmani faollashtirish uchun. Ikki marta tez bosish (double click) — odatda faylni yoki dasturni ochish uchun ishlatiladi.",
+          "Drag-and-drop — sichqoncha tugmasini bosib turgan holda kursorni siljitib, keyin qo'yib yuborish. Bu usul faylni bir papkadan ikkinchisiga ko'chirishda ishlatiladi."
+        ],
+        callout: { title: "Mashq qiling", text: "Ish stolidagi istalgan belgini (ikonka) oling va uni drag-and-drop bilan boshqa joyga ko'chirib ko'ring." }
+      }
+    ],
+    terms: [
+      { term: "Kursor", definition: "Sichqoncha harakatiga qarab ekranda siljiydigan ko'rsatkich.", example: "Kursorni fayl ustiga olib borib, bosish." },
+      { term: "Right-click (o'ng tugma)", definition: "Qo'shimcha buyruqlar menyusini ochadigan tugma.", example: "Faylga o'ng tugma bosib, 'Nusxalash' ni tanlash." },
+      { term: "Drag-and-drop", definition: "Biror narsani ushlab, sudrab, boshqa joyga qo'yish usuli.", example: "Faylni bir papkadan ikkinchisiga sudrab ko'chirish." }
+    ],
+    video: { title: "Sichqoncha bilan ishlash (video qo'shiladi)", language: "O'zbekcha", url: "https://www.youtube.com/watch?v=VIDEO_ID", embedUrl: "https://www.youtube.com/embed/VIDEO_ID", note: "Bu yerga sichqoncha asoslarini tushuntiruvchi video qo'shiladi." },
+    task: {
+      steps: ["Ish stolidagi bitta belgini bir marta bosib tanlang.", "Boshqa bir belgini ikki marta tez bosib oching.", "Bir faylni drag-and-drop bilan boshqa papkaga ko'chiring.", "Faylga o'ng tugma bosib, qanday buyruqlar chiqishini ko'ring."],
+      expectedResult: "Sichqonchaning uchala asosiy harakatini (bosish, ikki marta bosish, sudrash) amalda bajara olasiz.",
+      checklist: ["Bir marta bosishni sinadim", "Ikki marta bosishni sinadim", "Drag-and-drop qildim", "O'ng tugma menyusini ko'rdim"]
+    },
+    miniGame: { title: "Harakatni top", prompt: "Faylni bir papkadan ikkinchisiga ko'chirish uchun qaysi usul ishlatiladi?", options: ["Bir marta bosish", "Drag-and-drop", "G'ildirakni aylantirish"], correctIndex: 1, explanation: "Drag-and-drop — faylni ushlab, boshqa joyga sudrab ko'chirish usuli." },
+    quiz: [
+      { question: "Dastur yoki faylni ochish uchun odatda qanday bosiladi?", options: ["Bir marta chap tugma", "Ikki marta tez chap tugma", "Bir marta o'ng tugma"], correctIndex: 1, explanation: "Ikki marta tez bosish odatda faylni yoki dasturni ochadi." },
+      { question: "Qo'shimcha buyruqlar menyusini ochish uchun qaysi tugma bosiladi?", options: ["Chap tugma", "O'ng tugma", "G'ildirak"], correctIndex: 1, explanation: "O'ng tugma kontekst menyusini ochadi." },
+      { question: "Sahifani yuqori-pastga aylantirish uchun nima ishlatiladi?", options: ["G'ildirak (scroll wheel)", "O'ng tugma", "Drag-and-drop"], correctIndex: 0, explanation: "G'ildirak sahifani aylantirish uchun ishlatiladi." }
+    ],
+    summary: ["Sichqonchada chap tugma, o'ng tugma va g'ildirak bor.", "Bitta bosish tanlash, ikkita bosish ochish uchun ishlatiladi.", "Drag-and-drop faylni ko'chirishda qo'l keladi."],
+    nextLessonId: "l6"
+  },
+
+  l6: {
+    id: "l6", number: 17, moduleId: "m3", title: "Ish stoli, oynalar va fayl/papkalar bilan tanishish", level: "Boshlang'ich", estimatedMinutes: 25,
+    prerequisites: ["l5"],
+    objectives: [
+      "Ish stoli (desktop) va vazifalar panelini ajrata olasiz.",
+      "Yangi papka va fayl yarata olasiz.",
+      "Fayllarni nomlash va tartiblash qoidalarini bilasiz."
+    ],
+    explanationBlocks: [
+      {
+        heading: "Ish stoli va oynalar",
+        paragraphs: [
+          "Ish stoli (desktop) — kompyuter yoqilganda ko'rinadigan asosiy ekran. Unda dastur belgilari (ikonkalar), pastda esa vazifalar paneli (taskbar) joylashgan.",
+          "Har bir ochilgan dastur alohida oynada ishlaydi. Oynani kichraytirish, kattalashtirish yoki yopish uchun uning yuqori burchagidagi tugmalardan foydalaniladi."
+        ],
+        image: { src: "assets/images/lesson-06/ish-stoli-sxema.png", alt: "Ish stoli va vazifalar paneli sxemasi", caption: "Ish stoli, ochiq oynalar va pastdagi vazifalar paneli." }
+      },
+      {
+        heading: "Fayl va papka yaratish",
+        paragraphs: [
+          "Papka — fayllarni tartibli saqlash uchun ishlatiladigan 'qути'. Yangi papka yaratish uchun bo'sh joyga o'ng tugma bosib, 'Yangi papka' (New Folder) ni tanlash kifoya.",
+          "Fayl nomlashda bo'sh joy va maxsus belgilardan ehtiyot bo'ling, nom nimani anglatishini aniq yozing — masalan 'Hisobot-Oktyabr.docx', 'img-1234.png' emas."
+        ],
+        callout: { title: "Foydali odat", text: "Fayllaringizni mavzu bo'yicha alohida papkalarga joylashtiring — keyin topish ancha osonlashadi." }
+      }
+    ],
+    terms: [
+      { term: "Ish stoli (Desktop)", definition: "Kompyuter yoqilganda ko'rinadigan asosiy ekran.", example: "Unda dastur belgilari joylashgan." },
+      { term: "Vazifalar paneli (Taskbar)", definition: "Ochiq dasturlar va soat ko'rsatiladigan pastki panel.", example: "Windows'da pastda, Mac'da 'Dock' deb ataladi." },
+      { term: "Papka (Folder)", definition: "Fayllarni tartibli saqlash uchun ishlatiladigan konteyner.", example: "'Hujjatlar' papkasi ichida barcha matn fayllari." }
+    ],
+    video: { title: "Ish stoli va fayllar bilan ishlash (video qo'shiladi)", language: "O'zbekcha", url: "https://www.youtube.com/watch?v=VIDEO_ID", embedUrl: "https://www.youtube.com/embed/VIDEO_ID", note: "Bu yerga fayl/papka yaratishni tushuntiruvchi video qo'shiladi." },
+    task: {
+      steps: ["Ish stolida bo'sh joyga o'ng tugma bosing va yangi papka yarating.", "Papkaga 'Mening-fayllarim' deb nom bering.", "Papka ichiga oddiy matn fayli yarating.", "Faylga tushunarli nom bering va saqlang."],
+      expectedResult: "Yangi papka va fayl yaratib, ularga to'g'ri nom bera olasiz.",
+      checklist: ["Yangi papka yaratdim", "Papkaga nom berdim", "Ichiga fayl yaratdim", "Faylga tushunarli nom berdim"]
+    },
+    miniGame: { title: "Nomni top", prompt: "Quyidagilardan qaysi biri fayl uchun ENG TUSHUNARLI nom?", options: ["IMG_4821.png", "Hisobot-Oktyabr-2026.docx", "fayl (1) (2).docx"], correctIndex: 1, explanation: "Nom faylning mazmunini va sanasini aniq ko'rsatishi kerak." },
+    quiz: [
+      { question: "Ochiq dasturlar ko'rinadigan pastki panel qanday ataladi?", options: ["Ish stoli", "Vazifalar paneli (Taskbar)", "Papka"], correctIndex: 1, explanation: "Vazifalar paneli ochiq dasturlar va soatni ko'rsatadi." },
+      { question: "Yangi papka yaratish uchun odatda nima qilinadi?", options: ["Bo'sh joyga o'ng tugma bosib, 'Yangi papka'ni tanlash", "Ikki marta chap tugma bosish", "Klaviaturada Enter bosish"], correctIndex: 0, explanation: "O'ng tugma menyusi orqali yangi papka yaratiladi." },
+      { question: "Fayl nomlashda nimaga e'tibor berish kerak?", options: ["Nom qancha uzun bo'lsa shuncha yaxshi", "Nom mazmunni aniq ko'rsatishi kerak", "Nomning ahamiyati yo'q"], correctIndex: 1, explanation: "Tushunarli nom faylni keyinchalik tezroq topishga yordam beradi." }
+    ],
+    summary: ["Ish stoli — asosiy ekran, vazifalar paneli — ochiq dasturlar ko'rinadigan joy.", "Papka fayllarni tartibli saqlash uchun ishlatiladi.", "Fayllarga tushunarli, aniq nom berish muhim."],
+    nextLessonId: "l7"
+  },
+
+  l7: {
+    id: "l7", number: 27, moduleId: "m4", title: "Kompyuter ichida nima bor? Protsessor va xotira", level: "Boshlang'ich", estimatedMinutes: 25,
+    prerequisites: ["l6"],
+    objectives: [
+      "Protsessor (CPU) va tezkor xotira (RAM) vazifasini tushuntira olasiz.",
+      "RAM va qattiq disk (SSD/HDD) farqini bilasiz.",
+      "Bu qismlar birgalikda qanday ishlashini tasavvur qilasiz."
+    ],
+    explanationBlocks: [
+      {
+        heading: "Protsessor — kompyuterning 'miyasi'",
+        paragraphs: [
+          "Protsessor (CPU) — kompyuterdagi barcha buyruqlarni bajaradigan asosiy qism. U hisob-kitoblarni amalga oshiradi va boshqa qismlarga nima qilish kerakligini 'aytadi'.",
+          "Zamonaviy protsessorlarda bir nechta 'yadro' (core) bo'lishi mumkin. Har bir yadro alohida vazifani bajara oladi — shuning uchun ko'p yadroli protsessor bir vaqtda ko'proq ishni bajara oladi."
+        ],
+        image: { src: "assets/images/lesson-07/cpu-yadrolar.png", alt: "Protsessor va uning yadrolari sxemasi", caption: "Ko'p yadroli protsessor bir vaqtning o'zida bir nechta vazifani bajara oladi." }
+      },
+      {
+        heading: "Tezkor xotira (RAM) va qattiq disk farqi",
+        paragraphs: [
+          "RAM — dastur ishlayotgan paytda ma'lumotni VAQTINCHA saqlaydi. Kompyuter o'chirilsa, RAM'dagi ma'lumot yo'qoladi.",
+          "Qattiq disk (HDD yoki SSD) esa fayl va dasturlarni DOIMIY saqlaydi — kompyuter o'chirilsa ham ma'lumot yo'qolmaydi. SSD odatda HDD'dan ancha tezroq ishlaydi."
+        ],
+        callout: { title: "Oson analogiya", text: "RAM — stol ustidagi ish joyi (vaqtinchalik), qattiq disk — shkafdagi papka (doimiy saqlanadi)." }
+      }
+    ],
+    terms: [
+      { term: "Protsessor (CPU)", definition: "Buyruqlarni bajaradigan kompyuterning asosiy qismi.", example: "Dastur ochilganda CPU hisob-kitoblarni bajaradi." },
+      { term: "Yadro (Core)", definition: "Protsessor ichidagi alohida ishlov beruvchi qism.", example: "4 yadroli protsessor bir vaqtda 4 ta vazifani bajara oladi." },
+      { term: "RAM", definition: "Dastur ishlayotganda ma'lumotni vaqtincha saqlaydigan tezkor xotira.", example: "Ko'p dastur ochilsa, ko'proq RAM kerak bo'ladi." },
+      { term: "SSD/HDD", definition: "Fayl va dasturlarni doimiy saqlaydigan qurilma.", example: "Fotosuratlar va hujjatlar shu yerda saqlanadi." }
+    ],
+    video: { title: "Protsessor va xotira (video qo'shiladi)", language: "O'zbekcha", url: "https://www.youtube.com/watch?v=VIDEO_ID", embedUrl: "https://www.youtube.com/embed/VIDEO_ID", note: "Bu yerga CPU/RAM mavzusidagi video qo'shiladi." },
+    task: {
+      steps: ["O'z kompyuteringiz yoki telefoningizning protsessor nomini toping (Sozlamalar > Qurilma haqida).", "RAM hajmini (masalan 8GB) toping.", "Qattiq disk turi SSD yoki HDD ekanini aniqlang."],
+      expectedResult: "O'z qurilmangizning CPU, RAM va disk haqidagi asosiy ma'lumotini topa olasiz.",
+      checklist: ["Protsessor nomini topdim", "RAM hajmini topdim", "Disk turini aniqladim"]
+    },
+    miniGame: { title: "Vazifani moslashtir", prompt: "Kompyuter o'chirilganda YO'QOLADIGAN ma'lumot qaysi qurilmada saqlanadi?", options: ["RAM", "SSD/HDD", "Protsessor"], correctIndex: 0, explanation: "RAM vaqtinchalik xotira — kompyuter o'chsa, undagi ma'lumot yo'qoladi." },
+    quiz: [
+      { question: "Kompyuterdagi buyruqlarni bajaradigan asosiy qism qaysi?", options: ["RAM", "Protsessor (CPU)", "Klaviatura"], correctIndex: 1, explanation: "Protsessor barcha buyruqlarni bajaradi." },
+      { question: "Fayllar kompyuter o'chirilgandan keyin ham saqlanib qolishi uchun qayerda turishi kerak?", options: ["RAM", "Qattiq disk (SSD/HDD)", "Ekran"], correctIndex: 1, explanation: "Qattiq disk ma'lumotni doimiy saqlaydi." },
+      { question: "Ko'p yadroli protsessor nima qila oladi?", options: ["Faqat bitta vazifani bajaradi", "Bir vaqtda bir nechta vazifani bajara oladi", "Faqat ekranni yoritadi"], correctIndex: 1, explanation: "Har bir yadro alohida vazifani bajarishi mumkin." }
+    ],
+    summary: ["Protsessor — barcha buyruqlarni bajaradigan asosiy qism.", "RAM vaqtincha, qattiq disk doimiy ma'lumot saqlaydi.", "Ko'p yadroli protsessor bir vaqtda ko'proq ish bajara oladi."],
     nextLessonId: null
   }
 };
