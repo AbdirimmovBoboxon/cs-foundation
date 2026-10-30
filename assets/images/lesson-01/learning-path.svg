@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-labelledby="title desc">
+<title id="title">Darsning o'rganish yo'li</title><desc id="desc">Maqsad, tushuntirish, amaliy mashq, test va natija ketma-ketligi.</desc>
+<rect width="720" height="420" rx="24" fill="#f4f7ff"/>
+<text x="360" y="44" font-size="23" font-weight="700" text-anchor="middle" fill="#172033" font-family="Arial">Bitta dars qanday o'tiladi?</text>
+<g font-family="Arial" text-anchor="middle">
+<rect x="52" y="82" width="180" height="84" rx="15" fill="#dbe7ff" stroke="#8aabff" stroke-width="2"/><text x="142" y="116" font-size="17" font-weight="700" fill="#173d93">1. Maqsad</text><text x="142" y="140" font-size="13" fill="#34507b">Nimani o'rganamiz?</text>
+<path d="M236 124 H270" stroke="#6d87b9" stroke-width="3"/><path d="M262 116 L272 124 L262 132" fill="none" stroke="#6d87b9" stroke-width="3"/>
+<rect x="278" y="82" width="180" height="84" rx="15" fill="#e1f4e8" stroke="#81c99b" stroke-width="2"/><text x="368" y="116" font-size="17" font-weight="700" fill="#17613b">2. Tushunish</text><text x="368" y="140" font-size="13" fill="#37694d">Matn, rasm, video</text>
+<path d="M462 124 H496" stroke="#6d87b9" stroke-width="3"/><path d="M488 116 L498 124 L488 132" fill="none" stroke="#6d87b9" stroke-width="3"/>
+<rect x="504" y="82" width="164" height="84" rx="15" fill="#fff0ce" stroke="#e7be68" stroke-width="2"/><text x="586" y="116" font-size="17" font-weight="700" fill="#80510a">3. Amaliyot</text><text x="586" y="140" font-size="13" fill="#805f2b">O'zing bajar</text>
+<path d="M586 171 V218 H368 V244" stroke="#6d87b9" stroke-width="3" fill="none"/><path d="M360 236 L368 246 L376 236" fill="none" stroke="#6d87b9" stroke-width="3"/>
+<rect x="278" y="252" width="180" height="84" rx="15" fill="#efe4ff" stroke="#b29be8" stroke-width="2"/><text x="368" y="286" font-size="17" font-weight="700" fill="#5d36a2">4. Test va o'yin</text><text x="368" y="310" font-size="13" fill="#624d8b">Bilimni tekshir</text>
+<path d="M276 294 H242" stroke="#6d87b9" stroke-width="3"/><path d="M250 286 L240 294 L250 302" fill="none" stroke="#6d87b9" stroke-width="3"/>
+<rect x="52" y="252" width="180" height="84" rx="15" fill="#dff4f5" stroke="#82c7cb" stroke-width="2"/><text x="142" y="286" font-size="17" font-weight="700" fill="#145d63">5. Natija</text><text x="142" y="310" font-size="13" fill="#35686b">Progress saqlanadi</text>
+</g></svg>

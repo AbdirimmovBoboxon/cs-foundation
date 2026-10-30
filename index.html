@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kompyuter savodxonligini noldan boshlab darslar, rasmlar, videolar, amaliy mashqlar va testlar orqali o'rganing.">
+  <title>Computer Science Foundation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" id="brand-home" aria-label="Bosh sahifa">
+        <span class="brand-mark" aria-hidden="true">CS</span>
+        <span>
+          <strong class="site-title">Computer Science Foundation</strong>
+          <small class="site-subtitle">Kompyuter savodxonligi — noldan boshlab</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Asosiy navigatsiya">
+        <button id="nav-home" class="nav-btn active" type="button">Bosh sahifa</button>
+        <button id="nav-progress" class="nav-btn" type="button">Mening rivojlanishim</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app">
+    <section id="view-home" class="view" aria-labelledby="home-heading">
+      <div class="welcome-panel">
+        <div>
+          <p class="eyebrow">O'QUV YO'LI</p>
+          <h1 id="home-heading">Bilimni noldan boshlang.</h1>
+          <p>Har bir darsda sodda tushuntirish, matn yonidagi rasm, video, amaliy mashq, test va mini-o'yin bor.</p>
+        </div>
+        <div class="welcome-stat">
+          <span class="welcome-stat-number" id="home-completed-count">0</span>
+          <span>tugatilgan dars</span>
+        </div>
+      </div>
+
+      <div class="modules-layout">
+        <aside class="module-panel" aria-label="O'quv modullari">
+          <div class="panel-heading">
+            <h2>O'quv yo'li</h2>
+            <p>Modulni tanlang</p>
+          </div>
+          <div id="module-list" class="module-list"></div>
+        </aside>
+        <section class="lesson-list-panel" aria-labelledby="selected-module-title">
+          <div id="selected-module-heading" class="panel-heading">
+            <p class="eyebrow">TANLANGAN MODUL</p>
+            <h2 id="selected-module-title">Boshlash</h2>
+            <p id="selected-module-description">Darsni tanlab, o'rganishni boshlang.</p>
+          </div>
+          <div id="lesson-list" class="lesson-list">
+            <p class="placeholder-text">Darslar ro'yxati yuklanmoqda…</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="view-lesson" class="view hidden" aria-labelledby="lesson-title">
+      <button id="back-to-list" class="back-btn" type="button">← Darslar ro'yxatiga qaytish</button>
+      <article id="lesson-detail" class="lesson-detail">
+        <header class="lesson-header">
+          <div class="lesson-header-top">
+            <span id="lesson-level" class="badge"></span>
+            <span id="lesson-status-badge" class="status-pill">Boshlanmagan</span>
+          </div>
+          <h1 id="lesson-title"></h1>
+          <p id="lesson-meta" class="lesson-meta"></p>
+          <div class="lesson-progress-track" aria-label="Dars ichidagi bajarilish">
+            <div id="lesson-progress-fill" class="lesson-progress-fill"></div>
+          </div>
+        </header>
+
+        <section class="lesson-block objectives-block">
+          <h2>🎯 Dars oxirida siz</h2>
+          <ul id="lesson-objectives" class="objective-list"></ul>
+        </section>
+
+        <section class="lesson-block reading-block">
+          <div class="section-heading">
+            <h2>📖 Mavzuni tushunamiz</h2>
+            <p>Rasm va sxemalar izohlanayotgan matn yonida joylashadi.</p>
+          </div>
+          <div id="lesson-reading" class="lesson-reading"></div>
+        </section>
+
+        <section class="lesson-block">
+          <div class="section-heading">
+            <h2>🔎 Muhim atamalar</h2>
+            <p>Yangi so'zlarni sodda ta'rif va misol orqali yodda saqlang.</p>
+          </div>
+          <dl id="lesson-terms" class="terms-grid"></dl>
+        </section>
+
+        <section class="lesson-block">
+          <div class="section-heading">
+            <h2>▶ Video dars</h2>
+            <p>Videoni shu yerda ko'ring yoki YouTube'da alohida oching.</p>
+          </div>
+          <div id="lesson-video" class="video-wrap"></div>
+        </section>
+
+        <section class="lesson-block practice-block">
+          <div class="section-heading">
+            <h2>🛠 Amaliy vazifa</h2>
+            <p>Qadamlarni bajaring va yakunlaganlaringizni belgilang.</p>
+          </div>
+          <div id="lesson-task"></div>
+        </section>
+
+        <section class="lesson-block game-block">
+          <div class="section-heading">
+            <h2>🎮 Mini-o'yin</h2>
+            <p>O'rgangan bilimni tezkor mashq bilan mustahkamlang.</p>
+          </div>
+          <div id="lesson-game"></div>
+        </section>
+
+        <section class="lesson-block quiz-block">
+          <div class="section-heading">
+            <h2>✅ Mini-test</h2>
+            <p>Javoblarni tanlang va natijani tekshiring. Xatolar uchun izoh beriladi.</p>
+          </div>
+          <div id="lesson-quiz"></div>
+        </section>
+
+        <section class="lesson-block summary-block">
+          <h2>🧠 Esda saqlang</h2>
+          <ul id="lesson-summary"></ul>
+        </section>
+
+        <div id="lesson-action-message" class="action-message" role="status" aria-live="polite"></div>
+        <footer class="lesson-footer">
+          <button id="mark-complete" class="primary-btn" type="button">Darsni yakunlash</button>
+          <button id="go-next-lesson" class="secondary-btn" type="button">Keyingi dars →</button>
+        </footer>
+        <p class="completion-hint">Darsni yakunlash uchun amaliy vazifa belgilari va testni bajaring. Natijalar shu brauzerda saqlanadi.</p>
+      </article>
+    </section>
+
+    <section id="view-progress" class="view hidden" aria-labelledby="progress-heading">
+      <div class="progress-page-heading">
+        <p class="eyebrow">SIZNING YO'LINGIZ</p>
+        <h1 id="progress-heading">Mening rivojlanishim</h1>
+        <p>Har kuni qilgan mashqingiz, tugatilgan darslar va test natijalari shu yerda ko'rinadi.</p>
+      </div>
+      <div id="progress-summary" class="progress-summary"></div>
+      <section class="activity-panel">
+        <div class="section-heading">
+          <h2>Faollik taqvimi</h2>
+          <p>Ranglar o'rganishga ajratilgan faol vaqtni ko'rsatadi.</p>
+        </div>
+        <div id="progress-heatmap" class="heatmap-wrap"></div>
+        <div class="heatmap-legend" aria-label="Faollik ranglari izohi">
+          <span>Kam</span><i class="heat-cell heat-none"></i><i class="heat-cell heat-low"></i><i class="heat-cell heat-mid"></i><i class="heat-cell heat-high"></i><span>Ko'p</span>
+        </div>
+      </section>
+      <section class="activity-panel">
+        <div class="section-heading">
+          <h2>Oxirgi natijalar</h2>
+          <p>Qaysi darslarda test topshirilganini va natijalarni ko'ring.</p>
+        </div>
+        <div id="progress-recent-results"></div>
+      </section>
+      <p class="privacy-note">Eslatma: hozirgi versiya ma'lumotlarni faqat shu brauzerda saqlaydi. Brauzer ma'lumotlari tozalansa, progress yo'qolishi mumkin.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Computer Science Foundation · O'quv platformasi V1</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
